@@ -1,0 +1,123 @@
+<!--<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<br><br>
+
+<a href="/subirfoto">Subir foto</a>
+<br>
+<a href="/verfotos">Ver fotos</a>
+<br>
+<a href="/hoteles">Hoteles</a>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    .col-sm-8  {
+        background-image: url("https://i.ytimg.com/vi/bkD9taunpwY/maxresdefault.jpg");
+        background-size: cover; 
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default bg-info">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">BARCELÓ HOTELES</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="/hoteles">Hoteles</a></li>
+        <li><a href="#">Inspiracion</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login: client space</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-left bg-success">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    <p><a href="/subirfoto">Subir foto</a></p>
+      <p><a href="/verfotos">Ver fotos</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Oferta<br> especial</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <h3 style="background-color: white;"><i>Welcome</i></h3>
+      <p style="background-color: white;">Una de las compañías turísticas más importantes del mundo 
+          <br>con más de 250 hoteles y 700 agencias de viajes en 4 continentes.</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <img src="https://x.cdrst.com/foto/hotel-sf/645f/granderesp/hotel-barcelo-puerto-vallarta-general-884b206.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+      </div>
+      <div class="well">
+        <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_650,q_auto,w_1000/itemimages/42/61/42615_v11.jpeg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Barcelo Hoteles</p>
+</footer>
+
+</body>
+</html>
